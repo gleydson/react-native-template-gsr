@@ -101,6 +101,7 @@ react-native-template-gsr
 ├── .editorconfig
 ├── .eslintrc.json
 ├── .gitignore
+├── .prettierrc.js
 ├── babel.config.js
 ├── dependencies.json
 ├── devDependencies.json
