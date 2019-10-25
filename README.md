@@ -125,7 +125,7 @@ npx react-native init AwesomeExample --template gsr
 
 3. Copie o código _json_ contido no arquivo `scripts.json` (Você poderá deleter depois) e substitua os scripts existentes no `package.json`.
 
-4. Remova o arquivo `eslint.js`.
+4. Remova o arquivo `eslint.js` e a dependência `@react-native-community/eslint-config` contida no `package.json`.
 
 Com isso o projeto será criado com todas as dependências do template devidamente instaladas e linkadas, tal como os arquivos de configuração que são copiados para o projeto. Após isso você poderá rodar o script `yarn android` ou `yarn ios`.
 
@@ -186,6 +186,8 @@ Nesta seção haverão instruções caso você queira editar o template, explica
 - **.editorconfig** - Arquivo destinado à configuração do plugin Editor Config, que padroniza algumas configurações para o editor em diferentes ambientes;
 
 - **.eslintrc.json** - Arquivo de configuração do ESLint, é nele que são inseridas as regras e configurações de Linting do projeto, tal como a configuração do Resolver para o Babel Plugin Root Import e configuração da variável global `__DEV__`;
+
+- **.prettierrc.js** - Arquivo de configuração com regras do prettier para padronização do código;
 
 - **babel.config.js** - Arquivo de configuração do Babel, é nele que é configurado o Babel Plugin Root Import para aceitar imports absolutos na aplicação usando o diretório `src` como raiz;
 
