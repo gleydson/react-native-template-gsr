@@ -1,4 +1,28 @@
 {
   "name": "react-native-template-gsr",
-  "version": "1.0.1"
+  "version": "1.0.2",
+  "description": "Template para projetos em React Native, com Estrutura de Pastas customizada, Estilos Globais, ESLint + Prettier + Babel Plugin Root Import, React Navigation, Reactotron e Axios configurados entre outras coisas legais.",
+  "keywords": [
+    "react-native",
+    "template",
+    "eslint",
+    "react-navigation",
+    "reactotron",
+    "babel-root-import",
+    "axios",
+    "redux-persist",
+    "redux",
+    "redux-saga",
+    "reduxsauce",
+    "seamless-immutable",
+    "styled-components",
+    "react-native-vector-icons"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gleydson/react-native-template-gsr.git"
+  },
+  "homepage": "https://github.com/gleydson/react-native-template-gsr#readme",
+  "author": "Gleydson Rodrigues <gleydsonsr@gmail.com>",
+  "license": "MIT"
 }

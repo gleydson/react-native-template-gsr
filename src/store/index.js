@@ -1,5 +1,4 @@
 import AsyncStorage from '@react-native-community/async-storage';
-import Config from 'react-native-config';
 import { createStore, compose, applyMiddleware } from 'redux';
 import { SeamLessImmutablePersistenceTransform } from 'redux-immutable-persistence-transform';
 import { persistStore, persistReducer } from 'redux-persist';
@@ -10,7 +9,7 @@ import sagas from './sagas';
 
 
 const persistConfig = {
-  key: Config.APP_FLAG,
+  key: 'ReactNativeTemplateGSR',
   storage: AsyncStorage,
   transforms: [SeamLessImmutablePersistenceTransform],
 };

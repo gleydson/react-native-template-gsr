@@ -24,4 +24,6 @@ export const Input = styled.TextInput.attrs({
   border-radius: ${metrics.borderRadius};
   background-color: ${colors.white};
   width: 100%;
+  height: 50px;
+  padding: 3px 5px;
 `;

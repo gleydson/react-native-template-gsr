@@ -1,6 +1,6 @@
 import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 
-import leftTransition from '~/config/transitions/left';
+import leftTransition from '~/config/Transitions/left';
 import { Login } from '~/screens';
 
 const AppNavigator = createSwitchNavigator(

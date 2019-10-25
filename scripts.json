@@ -5,5 +5,5 @@
   "start": "react-native start --reset-cache",
   "test": "jest",
   "lint": "eslint .",
-  "clean:modules": "rm -Rf node_modules yarn.lock && yarn cache clean && yarn"
+  "clean:modules": "rm -Rf node_modules yarn.lock && yarn cache clean && yarn && cd ios && pod install && cd .."
 }

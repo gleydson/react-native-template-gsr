@@ -127,20 +127,9 @@ npx react-native init AwesomeExample --template gsr
 
 4. Remova o arquivo `eslint.js`.
 
-5. Adicione os códigos abaixo no arquivo `android/app/build.gradle`:
+Com isso o projeto será criado com todas as dependências do template devidamente instaladas e linkadas, tal como os arquivos de configuração que são copiados para o projeto. Após isso você poderá rodar o script `yarn android` ou `yarn ios`.
 
-```java
-apply from: project(':react-native-config').projectDir.getPath() + "/dotenv.gradle"
-
-...
-
-defaultConfig {
-    ...
-    resValue "string", "build_config_package", applicationId
-}
-```
-
-Com isso o projeto será criado com todas as dependências do template devidamente instaladas e linkadas, tal como os arquivos de configuração que são copiados para o projeto.
+Caso ocorra algum problema com o build do ios você poderá executar o script `yarn clean:modules` e depois buildar seu projeto novamente.
 
 ---
 
@@ -195,8 +184,6 @@ Nesta seção haverão instruções caso você queira editar o template, explica
   - **routes.js** - Arquivo com as configurações de navegação da aplicação, nele são criados os Navigators disponibilizados na biblioteca React Navigation;
 
 - **.editorconfig** - Arquivo destinado à configuração do plugin Editor Config, que padroniza algumas configurações para o editor em diferentes ambientes;
-
-- **.env** - Arquivo contendo variável de ambiente no projeto;
 
 - **.eslintrc.json** - Arquivo de configuração do ESLint, é nele que são inseridas as regras e configurações de Linting do projeto, tal como a configuração do Resolver para o Babel Plugin Root Import e configuração da variável global `__DEV__`;
 
