@@ -1,10 +1,7 @@
 {
   "name": "react-native-template-gsr",
-  "version": "1.0.3",
+  "version": "1.0.2",
   "description": "Template para projetos em React Native, com Estrutura de Pastas customizada, Estilos Globais, ESLint + Prettier + Babel Plugin Root Import, React Navigation, Reactotron e Axios configurados entre outras coisas legais.",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  },
   "keywords": [
     "react-native",
     "template",
