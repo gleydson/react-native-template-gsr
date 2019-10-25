@@ -125,7 +125,7 @@ npx react-native init AwesomeExample --template gsr
 
 3. Copie o código _json_ contido no arquivo `scripts.json` (Você poderá deleter depois) e substitua os scripts existentes no `package.json`.
 
-4. Remova o arquivo `eslint.js`.
+4. Remova o arquivo `eslint.js` e a dependência `@react-native-community/eslint-config` contida no `package.json`.
 
 Com isso o projeto será criado com todas as dependências do template devidamente instaladas e linkadas, tal como os arquivos de configuração que são copiados para o projeto. Após isso você poderá rodar o script `yarn android` ou `yarn ios`.
 
