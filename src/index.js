@@ -4,7 +4,7 @@ import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react';
 
 import '~/config/ReactotronConfig';
-import getPersistenceFunctions from '~/config/persistNavigation';
+import getPersistenceFunctions from '~/config/PersistNavigation';
 import Routes from '~/routes';
 import { store, persistor } from '~/store';
 import { colors } from '~/styles';

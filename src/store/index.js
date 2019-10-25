@@ -1,4 +1,5 @@
 import AsyncStorage from '@react-native-community/async-storage';
+import Config from 'react-native-config';
 import { createStore, compose, applyMiddleware } from 'redux';
 import { SeamLessImmutablePersistenceTransform } from 'redux-immutable-persistence-transform';
 import { persistStore, persistReducer } from 'redux-persist';
@@ -7,10 +8,9 @@ import createSagaMiddleware from 'redux-saga';
 import reducers from './ducks';
 import sagas from './sagas';
 
-import { displayName } from '~/../app.json';
 
 const persistConfig = {
-  key: displayName,
+  key: Config.APP_FLAG,
   storage: AsyncStorage,
   transforms: [SeamLessImmutablePersistenceTransform],
 };

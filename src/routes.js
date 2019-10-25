@@ -3,28 +3,16 @@ import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import leftTransition from '~/config/transitions/left';
 import { Login } from '~/screens';
 
-const MainNavigator = createSwitchNavigator(
+const AppNavigator = createSwitchNavigator(
   {
-    Login,
+    Login
   },
   {
+    initialRouteName: 'Login',
     defaultNavigationOptions: {
       header: null,
     },
     transitionConfig: () => leftTransition(),
-    transparentCard: true,
-  },
-);
-
-const AppNavigator = createSwitchNavigator(
-  {
-    Main: MainNavigator,
-  },
-  {
-    initialRouteName: 'Main',
-    defaultNavigationOptions: {
-      header: null,
-    },
   },
 );
 

@@ -1,12 +1,12 @@
+import Config from 'react-native-config';
 import Reactotron, { openInEditor, trackGlobalErrors, asyncStorage } from 'reactotron-react-native';
 import { reactotronRedux } from 'reactotron-redux';
 import sagaPlugin from 'reactotron-redux-saga';
 
-import { displayName } from '~/../app.json';
 
 if (__DEV__) {
   const tron = Reactotron.configure({
-    name: displayName
+    name: Config.APP_FLAG
   })
     .use(asyncStorage())
     .use(trackGlobalErrors())

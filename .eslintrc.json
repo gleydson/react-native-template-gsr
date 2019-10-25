@@ -74,7 +74,7 @@
     "eact/jsx-props-no-spreading": "off",
     "arrow-parens": "off",
     "react/jsx-props-no-spreading": "off",
-    "no-prototype-builtins": "off",
+    "no-prototype-builtins": "off"
   },
   "settings": {
     "import/resolver": {
