@@ -12,8 +12,8 @@ export default function Login() {
 
   const emailUser = useSelector(email);
 
-  function handleEmail(email) {
-    dispatch(LoginAction.setEmail(email));
+  function handleEmail(value) {
+    dispatch(LoginAction.setEmail(value));
   }
 
   return (
