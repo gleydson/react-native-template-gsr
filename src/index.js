@@ -8,13 +8,17 @@ import getPersistenceFunctions from '~/config/PersistNavigation';
 import Routes from '~/routes';
 import { store, persistor } from '~/store';
 import { colors } from '~/styles';
+import { setNavigator } from '~/services/navigation';
 
 export default function () {
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <StatusBar backgroundColor={colors.primary} barStyle="light-content" />
-        <Routes {...getPersistenceFunctions()} />
+        <Routes
+          {...getPersistenceFunctions()}
+          ref={navigatorRef => setNavigator(navigatorRef)}
+        />
       </PersistGate>
     </Provider>
   );
