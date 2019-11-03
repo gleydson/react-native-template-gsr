@@ -130,8 +130,6 @@ npx react-native init AwesomeExample --template gsr
 
 Com isso o projeto será criado com todas as dependências do template devidamente instaladas e linkadas, tal como os arquivos de configuração que são copiados para o projeto. Após isso você poderá rodar o script `yarn android` ou `yarn ios`.
 
-Caso ocorra algum problema com o build do ios você poderá executar o script `yarn clean:modules` e depois buildar seu projeto novamente.
-
 ---
 
 ### Edição
