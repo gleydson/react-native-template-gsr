@@ -6,7 +6,9 @@
   },
   "extends": [
     "airbnb",
-    "plugin:react-native/all"
+    "plugin:react-native/all",
+    "prettier",
+    "prettier/react"
   ],
   "globals": {
     "Atomics": "readonly",
@@ -25,7 +27,8 @@
     "react-native",
     "jsx-a11y",
     "import",
-    "import-helpers"
+    "import-helpers",
+    "prettier"
   ],
   "rules": {
     "import-helpers/order-imports": [
