@@ -6,9 +6,9 @@ import { PersistGate } from 'redux-persist/integration/react';
 import '~/config/ReactotronConfig';
 import getPersistenceFunctions from '~/config/PersistNavigation';
 import Routes from '~/routes';
+import NavigatorService from '~/services/navigation';
 import { store, persistor } from '~/store';
 import { colors } from '~/styles';
-import { setNavigator } from '~/services/navigation';
 
 export default function () {
   return (
@@ -17,7 +17,7 @@ export default function () {
         <StatusBar backgroundColor={colors.primary} barStyle="light-content" />
         <Routes
           {...getPersistenceFunctions()}
-          ref={navigatorRef => setNavigator(navigatorRef)}
+          ref={navigatorRef => NavigatorService.setNavigator(navigatorRef)}
         />
       </PersistGate>
     </Provider>
