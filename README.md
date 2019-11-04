@@ -78,10 +78,12 @@ react-native-template-gsr
 │   ├── services/
 │   │   ├── api/
 │   │   │   └── base.js
-│   │   └── i18n/
-│   │       ├── locales/
-│   │       │   └── en-US.js
-│   │       │   └── pt-BR.js
+│   │   ├── i18n/
+│   │   │   ├── locales/
+│   │   │   │   └── en-US.js
+│   │   │   │   └── pt-BR.js
+│   │   │   └── index.js
+│   │   └── navigation/
 │   │       └── index.js
 │   ├── store/
 │   │   ├── ducks/
@@ -163,6 +165,8 @@ Nesta seção haverão instruções caso você queira editar o template, explica
     - **i18n** - Diretório contendo as configurações para tradução nas línguas que forem definidas;
 
         - **locales** - Diretório contendo _resources_ para traduções.
+
+    - **navigation** - Diretório contendo a action para disparo de navegação fora dos componentes, como por exemplo nos sagas;
 
   - **store** - Diretório onde será criada toda a estrutura do Redux para a aplicação, como os **Ducks** (Reducers + Action Types + Action Creators), os **Sagas** e um arquivo para centralizar toda essa configuração e disponibilizar para o restante da aplicação;
 
