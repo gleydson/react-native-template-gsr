@@ -12,7 +12,7 @@ const AppNavigator = createSwitchNavigator(
     defaultNavigationOptions: {
       header: null,
     },
-    transitionConfig: () => leftTransition(),
+    transitionConfig: leftTransition,
   },
 );
 
