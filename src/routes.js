@@ -9,9 +9,6 @@ const AppNavigator = createSwitchNavigator(
   },
   {
     initialRouteName: 'Login',
-    defaultNavigationOptions: {
-      header: null,
-    },
     transitionConfig: leftTransition,
   },
 );
