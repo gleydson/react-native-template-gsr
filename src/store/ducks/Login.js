@@ -16,4 +16,6 @@ export default createReducer(INITIAL_STATE, {
   [Types.SET_EMAIL]: setEmail,
 });
 
-export const email = state => state.Login.email;
+export const Selectors = {
+  email: state => state.Login.email,
+};
