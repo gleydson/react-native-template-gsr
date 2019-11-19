@@ -70,6 +70,7 @@ react-native-template-gsr
 │   │   └── Transitions
 │   │       └── left.js
 │   ├── datas/
+│   ├── hooks/
 │   ├── screens/
 │   │   ├── Login/
 │   │   │   ├── index.js
