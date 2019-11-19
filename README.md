@@ -151,6 +151,8 @@ Nesta seção haverão instruções caso você queira editar o template, explica
 
   - **datas** - Diretório que poderá conter arquivos _.json_ que poderão ser utilizados em sua aplicação caso seja necessário;
 
+  - **hooks** - Diretório que poderá conter seus hooks customizados, ao invés de criar um diretório _util_ encapsule suas funções em um hook e torne sua solução mais elegante (Sobre hooks customizados [clique aqui](https://pt-br.reactjs.org/docs/hooks-custom.html) );
+
   - **screens** - Diretório onde ficam as páginas (telas) da aplicação, como forma de padronização e boas práticas toda página fica dentro de um diretório com seu nome;
 
     - **Login** - Diretório exemplo de uma página cujo nome é **Login**, por padrão foi adotado usar sempre como nome do diretório o nome da página em camelCase, dentro desse diretório é necessária a criação ao menos do arquivo `index.js`;
