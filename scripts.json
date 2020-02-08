@@ -1,9 +1,0 @@
-{
-  "preandroid": "adb reverse tcp:9090 tcp:9090",
-  "android": "react-native run-android",
-  "ios": "react-native run-ios",
-  "start": "react-native start --reset-cache",
-  "test": "jest",
-  "lint": "eslint .",
-  "clean:modules": "rm -Rf node_modules yarn.lock && yarn cache clean && yarn && cd ios && pod install && cd .."
-}
