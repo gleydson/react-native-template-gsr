@@ -10,4 +10,11 @@ deploy:
     tags: true
   email: 'gleydsonsr@gmail.com'
   cleanup: true
-  api_token: ${NPM_TOKEN}
+  api_token: '$NPM_TOKEN'
+
+notifications:
+  email:
+    recipients:
+    - gleydsonsr@gmail.com
+    on_success: change
+    on_failure: always
