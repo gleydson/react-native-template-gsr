@@ -3,6 +3,7 @@ os:
   'linux'
 node_js:
   - 'node'
+before_deploy: echo "$NPM_TOKEN"
 deploy:
   provider: npm
   on:
