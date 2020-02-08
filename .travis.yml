@@ -8,5 +8,5 @@ deploy:
   on:
     tags: true
   email: 'gleydsonsr@gmail.com'
-  cleanup: true,
+  cleanup: true
   api_token: '${NPM_TOKEN}'
