@@ -9,4 +9,4 @@ deploy:
     tags: true
   email: 'gleydsonsr@gmail.com'
   cleanup: true
-  api_key: '${NPM_TOKEN}'
+  api_token: '${NPM_TOKEN}'
