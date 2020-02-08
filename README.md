@@ -144,11 +144,11 @@ Nesta seção haverão instruções caso você queira editar o template, explica
 
   - **config** - Diretório para guardar os arquivos de configuração da aplicação, por exemplo, a configuração de uso do Reactotron e configuração de inicialização do Firebase;
 
-    - **PersistNavigation** - Diretório contendo a configuração da persistencia das informações da tela que serão usados somente em modo de desenvolvimento para evitar o _reset_ total das telas ao realizar _reload_ em sua aplicação;
+    - **persist_navigation** - Diretório contendo a configuração da persistencia das informações da tela que serão usados somente em modo de desenvolvimento para evitar o _reset_ total das telas ao realizar _reload_ em sua aplicação;
 
-    - **ReactotronConfig** - Diretório contendo a configuração do Reactotron, com os Plugins `reactotron-redux` e `reactotron-redux-saga`, para ser usado na aplicação;
+    - **reactotron_config** - Diretório contendo a configuração do Reactotron, com os Plugins `reactotron-redux` e `reactotron-redux-saga`, para ser usado na aplicação;
 
-    - **Transitions** - Diretório contendo animações de transição entre telas, atualmente existe apenas uma animação mais você poderá criar e adicionar mais animações conforme sua necessidade.
+    - **transitions** - Diretório contendo animações de transição entre telas, atualmente existe apenas uma animação mais você poderá criar e adicionar mais animações conforme sua necessidade.
 
   - **datas** - Diretório que poderá conter arquivos _.json_ que poderão ser utilizados em sua aplicação caso seja necessário;
 
@@ -156,7 +156,7 @@ Nesta seção haverão instruções caso você queira editar o template, explica
 
   - **screens** - Diretório onde ficam as páginas (telas) da aplicação, como forma de padronização e boas práticas toda página fica dentro de um diretório com seu nome;
 
-    - **Login** - Diretório exemplo de uma página cujo nome é **Login**, por padrão foi adotado usar sempre como nome do diretório o nome da página em camelCase, dentro desse diretório é necessária a criação ao menos do arquivo `index.js`;
+    - **login** - Diretório exemplo de uma página cujo nome é **Login**, por padrão foi adotado usar sempre como nome do diretório o nome da página em camelCase, dentro desse diretório é necessária a criação ao menos do arquivo `index.js`;
 
       - **index.js** - Arquivo com toda a lógica da página, com os componentes visuais a serem renderizados e também o código para conectar o componente ao Redux para acessar o State global e as Actions criadas nos Ducks;
 
@@ -177,7 +177,7 @@ Nesta seção haverão instruções caso você queira editar o template, explica
 
       - **index.js** - Arquivo responsável por importar cada **Duck** criado e combiná-los em um só para serem usados no Redux através da função `combineReducers()`;
 
-      - **Login.js** - Arquivo contendo um exemplo de um `duck` .
+      - **user.js** - Arquivo contendo um exemplo de um `duck` .
     - **sagas** - Diretório destinado a centralizar os **Sagas** da aplicação para padronização na estrutura relacionada ao Redux;
 
       - **index.js** - Arquivo responsável por relacionar as **Actions** disparadas pela aplicação às funções do **Saga**, que são Funções Generator, nele é definido os **Action Types** a serem "escutados" e qual função executar quando um Action Creator for executado;
@@ -196,10 +196,6 @@ Nesta seção haverão instruções caso você queira editar o template, explica
 
 - **babel.config.js** - Arquivo de configuração do Babel, é nele que é configurado o Babel Plugin Root Import para aceitar imports absolutos na aplicação usando o diretório `src` como raiz;
 
-- **dependencies.json** - Arquivo contendo apenas um objeto com a lista de dependências que devem ser instaladas na aplicação, vale lembrar que as dependências que já vem por padrão no projeto como `react` e `react-native` não precisam estar nessa lista, a menos que você queira gerenciar a versão dessas libs;
-
-- **devDependencies.json** - Arquivo contendo apenas um objeto com a lista de dependências de desenvolvimento que devem ser instaladas na aplicação, vale lembrar que as dependências de desenvolvimento que já vem por padrão no projeto como `@babel/core`, `@babel/runtime`, entre outras, não precisam estar nessa lista, a menos que você queira gerenciar a versão dessas libs;
-
 - **index.js** - Arquivo raiz da aplicação, também chamado de _Entry Point_, é o primeiro arquivo chamado no momento do build e execução da aplicação, nele é chamado o arquivo `src/index.js` que por sua vez chama as rotas da aplicação;
 
 - **jsconfig.json** - Arquivo de configuração do JavaScript no Editor, ele é o responsável por ativar o Auto Complete de códigos JavaScript na aplicação;
@@ -207,8 +203,6 @@ Nesta seção haverão instruções caso você queira editar o template, explica
 - **package.json** - Diferente dos projetos comuns, esse arquivo tem as configurações necessárias para a publicação do Template no NPM, para saber mais sobre isso veja a seção abaixo.
 
 - **react-native.config.js** - Arquivo contendo algumas configurações do projeto, como a especificação do diretório contendo _fonts_ que poderão ser adicionadas no projeto.
-
-- **scripts.json** - Arquivo temporário que conterá scripts a serem substituidos ao final da intalação do seu projeto.
 
 <!-- CONTRIBUTING -->
 
