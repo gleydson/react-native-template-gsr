@@ -3,7 +3,6 @@ os:
   'linux'
 node_js:
   - 'node'
-before_deploy: echo "$NPM_TOKEN"
 deploy:
   provider: npm
   on:
@@ -11,4 +10,4 @@ deploy:
     tags: true
   email: 'gleydsonsr@gmail.com'
   cleanup: true
-  api_token: '${NPM_TOKEN}'
+  api_token: ${NPM_TOKEN}
