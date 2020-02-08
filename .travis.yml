@@ -6,7 +6,8 @@ node_js:
 deploy:
   provider: npm
   on:
+    branch: master
     tags: true
   email: 'gleydsonsr@gmail.com'
   cleanup: true
-  api_token: '${NPM_TOKEN}'
+  api_key: '${NPM_TOKEN}'

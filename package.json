@@ -22,7 +22,13 @@
     "type": "git",
     "url": "git+https://github.com/gleydson/react-native-template-gsr.git"
   },
+  "bugs": {
+    "url": "https://github.com/gleydson/react-native-template-gsr/issues"
+  },
   "homepage": "https://github.com/gleydson/react-native-template-gsr#readme",
   "author": "Gleydson Rodrigues <gleydsonsr@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  }
 }
