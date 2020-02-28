@@ -23,7 +23,3 @@ jobs:
 
     - name: Install dependencies
       run: yarn
-
-    - uses: JS-DevTools/npm-publish@v1
-      with:
-        token: ${{ secrets.NPM_TOKEN }}
