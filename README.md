@@ -11,13 +11,13 @@
   <h1 align="center">React Native Template GSR</h1>
   <!-- PROJECT SHIELDS -->
 
-  [![npm](https://img.shields.io/npm/v/react-native-template-gsr.svg?label=npm%20package)](https://www.npmjs.com/package/react-native-template-gsr)
-  [![npm](https://img.shields.io/npm/dt/react-native-template-gsr.svg)](https://www.npmjs.com/package/react-native-template-gsr)
-  [![GitHub issues](https://img.shields.io/github/issues-raw/gleydson/react-native-template-gsr.svg)](https://github.com/gleydson/react-native-template-gsr/issues)
-  [![GitHub last commit](https://img.shields.io/github/last-commit/gleydson/react-native-template-gsr.svg)](https://github.com/gleydson/react-native-template-gsr/commits/master)
-  [![NPM](https://img.shields.io/npm/l/react-native-template-gsr.svg)](https://choosealicense.com/licenses/mit)
-</div>
+[![npm](https://img.shields.io/npm/v/react-native-template-gsr.svg?label=npm%20package)](https://www.npmjs.com/package/react-native-template-gsr)
+[![npm](https://img.shields.io/npm/dt/react-native-template-gsr.svg)](https://www.npmjs.com/package/react-native-template-gsr)
+[![GitHub issues](https://img.shields.io/github/issues-raw/gleydson/react-native-template-gsr.svg)](https://github.com/gleydson/react-native-template-gsr/issues)
+[![GitHub last commit](https://img.shields.io/github/last-commit/gleydson/react-native-template-gsr.svg)](https://github.com/gleydson/react-native-template-gsr/commits/master)
+[![NPM](https://img.shields.io/npm/l/react-native-template-gsr.svg)](https://choosealicense.com/licenses/mit)
 
+</div>
 
 <!-- TABLE OF CONTENTS -->
 
@@ -118,17 +118,11 @@ Serão explicados os arquivos e diretórios na seção de [Edição](#edição).
 
 ### Instalação
 
-1. Para instalar e utilizar esse template o processo é bem simples, basta criar um projeto novo utilizando o comando:
+Para instalar e utilizar esse template o processo é bem simples, basta criar um projeto novo utilizando o comando:
 
 ```shell
 npx react-native init AwesomeExample --template gsr
 ```
-
-2. Depois do projeto criado você pode deletar o arquivo `App.js` da raiz, pois o arquivo `index.js` agora aponta para a pasta **src**.
-
-3. Copie o código _json_ contido no arquivo `scripts.json` (Você poderá deleter depois) e substitua os scripts existentes no `package.json`.
-
-4. Remova o arquivo `eslint.js` e a dependência `@react-native-community/eslint-config` contida no `package.json`.
 
 Com isso o projeto será criado com todas as dependências do template devidamente instaladas e linkadas, tal como os arquivos de configuração que são copiados para o projeto. Após isso você poderá rodar o script `yarn android` ou `yarn ios`.
 
@@ -161,13 +155,14 @@ Nesta seção haverão instruções caso você queira editar o template, explica
       - **index.js** - Arquivo com toda a lógica da página, com os componentes visuais a serem renderizados e também o código para conectar o componente ao Redux para acessar o State global e as Actions criadas nos Ducks;
 
       - **styled.js** - Arquivo contendo toda a estilização da tela feita com `styled-components`;
+
   - **services** - Diretório onde serão criados os arquivos relacionados a serviços utilizados na aplicação, por exemplo, requisições HTTP, autenticação com Firebase ou qualquer outro serviço que for utilizado;
 
     - **api** - Diretório com a configuração da biblioteca Axios para envio de requisições HTTP, o endereço que vem configurado por padrão é para a API do Github;
 
     - **i18n** - Diretório contendo as configurações para tradução nas línguas que forem definidas;
 
-        - **locales** - Diretório contendo _resources_ para traduções.
+      - **locales** - Diretório contendo _resources_ para traduções.
 
     - **navigation** - Diretório contendo a action para disparo de navegação fora dos componentes, como por exemplo nos sagas;
 
@@ -178,6 +173,7 @@ Nesta seção haverão instruções caso você queira editar o template, explica
       - **index.js** - Arquivo responsável por importar cada **Duck** criado e combiná-los em um só para serem usados no Redux através da função `combineReducers()`;
 
       - **user.js** - Arquivo contendo um exemplo de um `duck` .
+
     - **sagas** - Diretório destinado a centralizar os **Sagas** da aplicação para padronização na estrutura relacionada ao Redux;
 
       - **index.js** - Arquivo responsável por relacionar as **Actions** disparadas pela aplicação às funções do **Saga**, que são Funções Generator, nele é definido os **Action Types** a serem "escutados" e qual função executar quando um Action Creator for executado;

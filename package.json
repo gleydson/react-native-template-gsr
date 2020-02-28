@@ -27,9 +27,5 @@
   },
   "homepage": "https://github.com/gleydson/react-native-template-gsr#readme",
   "author": "Gleydson Rodrigues <gleydsonsr@gmail.com>",
-  "license": "MIT",
-  "publishConfig": {
-    "access": "public",
-    "registry": "https://npm.pkg.github.com/"
-  }
+  "license": "MIT"
 }
