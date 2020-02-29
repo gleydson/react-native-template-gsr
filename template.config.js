@@ -1,5 +1,5 @@
 module.exports = {
   placeholderName: "ReactNativeTemplateGSR",
-  templateDir: "./template",
-  postInitScript: "./post-init.js"
+  templateDir: "./template"
+  // postInitScript: "./post-init.js"
 };
