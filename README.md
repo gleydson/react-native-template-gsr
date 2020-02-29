@@ -121,7 +121,7 @@ Serão explicados os arquivos e diretórios na seção de [Edição](#edição).
 Para instalar e utilizar esse template o processo é bem simples, basta criar um projeto novo utilizando o comando:
 
 ```shell
-npx react-native init AwesomeExample --template gsr
+npx @react-native-community/cli@next init --template=react-native-template-gsr AwesomeExample
 ```
 
 Com isso o projeto será criado com todas as dependências do template devidamente instaladas e linkadas, tal como os arquivos de configuração que são copiados para o projeto. Após isso você poderá rodar o script `yarn android` ou `yarn ios`.
