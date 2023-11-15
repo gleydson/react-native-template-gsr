@@ -12,7 +12,6 @@
   <!-- PROJECT SHIELDS -->
 
 [![npm](https://img.shields.io/npm/v/react-native-template-gsr.svg?label=npm%20package)](https://www.npmjs.com/package/react-native-template-gsr)
-[![npm](https://img.shields.io/npm/dt/react-native-template-gsr.svg)](https://www.npmjs.com/package/react-native-template-gsr)
 [![GitHub issues](https://img.shields.io/github/issues-raw/gleydson/react-native-template-gsr.svg)](https://github.com/gleydson/react-native-template-gsr/issues)
 [![GitHub last commit](https://img.shields.io/github/last-commit/gleydson/react-native-template-gsr.svg)](https://github.com/gleydson/react-native-template-gsr/commits/master)
 [![NPM](https://img.shields.io/npm/l/react-native-template-gsr.svg)](https://choosealicense.com/licenses/mit)
